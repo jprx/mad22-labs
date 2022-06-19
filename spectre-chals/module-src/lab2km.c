@@ -20,6 +20,7 @@ MODULE_AUTHOR("Joseph Ravichandran <jravi@csail.mit.edu>");
 MODULE_DESCRIPTION("Lab 2 target module for 6.888 Spring 2022");
 
 // The secrets you're trying to leak!
+// Note for MAD 2022 at ISCA participants- These are not the same secrets as the ones running on the server ;)
 static volatile char __attribute__((aligned(32768))) kernel_secret3[LAB2_SECRET_MAX_LEN] = "MIT{h4rd3st}";
 static volatile char __attribute__((aligned(32768))) kernel_secret2[LAB2_SECRET_MAX_LEN] = "MIT{scary_sp3ctr3!}";
 static volatile char __attribute__((aligned(32768))) kernel_secret1[LAB2_SECRET_MAX_LEN] = "MIT{k3rn3l_m3m0r135}";
